@@ -1,14 +1,15 @@
 :root{
     --white:#FFFFFF;
     --black:#000000;
-    --base-color-light:#eee4e4;
+    --base-color-dark:#eee4e4;
+    --base-color-light:#f3eded;
     --blue-light:#145374;
     --blue-dark:#00334E;
     --salmon-focus:#EE6F57;
 
-    --sm:8px;
-    --md:12px;
-    --lg:16px;
+    --sm:12px;
+    --md:16px;
+    --lg:20px;
 }
 body{
     font-family: 'Raleway', sans-serif;
@@ -23,7 +24,7 @@ body{
 .sub_container{
     display: grid;
     place-items: center;
-    width: 600px;
+    width: 800px;
 }
 .imagen{
     width: 200px;
@@ -54,13 +55,14 @@ button{
     border: none;
     background-color:var(--salmon-focus);
     color: var(--white);
-    border-radius: 8px;
-    height: 24px;
+    border-radius: 20px;
+    height: 36px;
     cursor:pointer;
     font-size: var(--sm);
     width: 100%;
     margin-bottom: 8px;
     margin-top: 8px;
+    font-size: var(--md);
 }
 .apps button:nth-child(1){
     grid-column: 1/2;
@@ -84,6 +86,10 @@ button{
         height: 100vh;
         display: grid;/*display en grid para aplicar la propiedad de abajo*/
         place-items: center;/*centrar el contenido vertical y horizontal*/
+        
+        }
+        .sub_container{
+            background: var(--base-color-light);
         }
     .apps{
         display: flex;
