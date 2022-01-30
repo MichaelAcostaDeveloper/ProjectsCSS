@@ -6,12 +6,12 @@
     --blue-dark:#00334E;
     --salmon-focus:#EE6F57;
 
-    --sm:14px;
-    --md:16px;
-    --lg:18px;
+    --sm:8px;
+    --md:12px;
+    --lg:16px;
 }
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
 }
 .contenedor{
@@ -26,9 +26,10 @@ body{
     width: 300px;
 }
 .imagen{
-    width: 224px;
+    width: 200px;
     justify-self: center;/*para centrar el logotipo*/
     margin-bottom: 24px;
+    
 }
 
 .description h1{
@@ -39,7 +40,7 @@ text-align: center;
 .intro_app{
     color: var(--blue-dark);
     font-size: var(--md);
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 24px;
     text-align: center;
 }
@@ -57,7 +58,7 @@ button{
     color: var(--white);
     border-radius: 8px;
     height: 24px;
-    cursor:progress;
+    cursor:pointer;
     font-size: var(--sm);
     width: 100%;
     margin-bottom: 8px;
@@ -105,5 +106,8 @@ button{
     .apps{
         display: flex;
         flex-direction: column;
+    }
+    .imagen{
+        width: 150px;
     }
 }
