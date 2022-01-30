@@ -47,6 +47,8 @@ text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
     
 }
 button{
@@ -57,9 +59,12 @@ button{
     height: 24px;
     cursor:progress;
     font-size: var(--sm);
+    width: 100%;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 .apps button:nth-child(1){
-    margin: 8px;
+    
     grid-column: 1/2;
     grid-row: 1/2;
   
@@ -68,21 +73,21 @@ button{
 }
 
 .apps button:nth-child(2){
-    margin: 8px;
+
     grid-column: 2/3;
     grid-row: 1/2;
 
 }
 
 .apps button:nth-child(3){
-    margin: 8px;
+  
     grid-column: 1/2;
     grid-row: 2/3;
 
 }
 
 .apps button:nth-child(4){
-    margin: 8px;
+    
     grid-column: 2/3;
     grid-row: 2/3;
 
@@ -90,7 +95,13 @@ button{
 
 
 
-@media (max-width:400px){/*Cuando la pantalla llegue a 300px se aplican estas propiedades*/
+@media (max-width:400px){/*Cuando la pantalla llegue a 400px se aplican estas propiedades*/
+    .contenedor{
+        width: 100%;
+        height: 100vh;
+        display: grid;/*display en grid para aplicar la propiedad de abajo*/
+        place-items: center;/*centrar el contenido vertical y horizontal*/
+        }
     .apps{
         display: flex;
         flex-direction: column;
