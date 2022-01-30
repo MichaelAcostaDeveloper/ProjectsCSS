@@ -1,0 +1,98 @@
+:root{
+    --white:#FFFFFF;
+    --black:#000000;
+    --base-color-light:#eee4e4;
+    --blue-light:#145374;
+    --blue-dark:#00334E;
+    --salmon-focus:#EE6F57;
+
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: grid;/*display en grid para aplicar la propiedad de abajo*/
+    place-items: center;/*centrar el contenido vertical y horizontal*/
+    }
+.sub_container{
+    display: grid;
+    place-items: center;
+    width: 300px;
+}
+.imagen{
+    width: 224px;
+    justify-self: center;/*para centrar el logotipo*/
+    margin-bottom: 24px;
+}
+
+.description h1{
+font-size: var(--lg);
+margin-bottom: 12px;
+text-align: center;
+}
+.intro_app{
+    color: var(--blue-dark);
+    font-size: var(--md);
+    font-weight: 500;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.apps{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+button{
+    border: none;
+    background-color:var(--salmon-focus);
+    color: var(--white);
+    border-radius: 8px;
+    height: 24px;
+    cursor:progress;
+    font-size: var(--sm);
+}
+.apps button:nth-child(1){
+    margin: 8px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  
+    
+
+}
+
+.apps button:nth-child(2){
+    margin: 8px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+
+.apps button:nth-child(3){
+    margin: 8px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.apps button:nth-child(4){
+    margin: 8px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+
+
+
+@media (max-width:400px){/*Cuando la pantalla llegue a 300px se aplican estas propiedades*/
+    .apps{
+        display: flex;
+        flex-direction: column;
+    }
+}
