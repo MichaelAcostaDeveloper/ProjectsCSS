@@ -84,7 +84,12 @@ button{
     .contenedor{
             background: var(--base-color-light);
             width: 100%;
+            height: 100vh;
             }
+    .sub_container{
+        display: grid;
+        place-items: center;
+    }
     .apps{
         display: flex;
         flex-direction: column;
