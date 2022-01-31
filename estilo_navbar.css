@@ -8,7 +8,7 @@
     --blue-dark:#00334E;
     --salmon-focus:#EE6F57;
 
-    --vs:8px;
+    --vs:7px;
     --sm:12px;
     --md:16px;
     --lg:20px;
@@ -40,13 +40,13 @@ nav{
     width: 10px;
     height: 10px;
     justify-self: center;
-    padding: 4px;
+    padding: 4px 8px 4px 6px;/*arriba, derecha,abajo,izquierda*/
    
 }
 .menu{
     width: 10px;
     justify-self: center;
-    padding: 4px;
+    padding: 4px 8px 4px 6px;/*arriba, derecha,abajo,izquierda*/
     display: none;
 }
 
@@ -61,9 +61,10 @@ nav{
     place-items: center;
     text-decoration: none;
     color:var(--graybase);
-    padding: 8px;
+    padding: 4px 8px 4px 6px;/*arriba, derecha,abajo,izquierda*/
     border-radius: 8px;
     font-size: var(--vs);
+    font-weight: 500;
     
 }
 .navbar-right ul li a:hover{
@@ -90,8 +91,7 @@ nav{
     .menu{
         display: block;
         justify-self: center;
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 4px 8px 4px 6px;/*arriba, derecha,abajo,izquierda*/
     }
 
 }
